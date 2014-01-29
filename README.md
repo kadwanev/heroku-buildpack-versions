@@ -1,4 +1,10 @@
 heroku-buildpack-versions
 =========================
 
-Make version of your application available to the application
+Meant to be used with the multi buildpack to make deployment version information available to the application.
+
+How to use:
+
+
+What is available:
+

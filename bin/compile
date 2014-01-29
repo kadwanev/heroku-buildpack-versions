@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+set -e
+
+echo $@
+echo
+echo
+echo
+
+unset GIT_DIR
+
+printenv
+echo
+echo
+echo
+echo "$(pwd)"
+ls -la
+echo
+echo
+echo $1
+cd $1
+ls -la
+git log --pretty=%H -1 > .git_version
+echo "      .git_version: $(cat .git_version)"
